@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP MART</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .hamburger {
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar__inner template-width">
+        <div class="topbar__left">
+          <span class="topbar__notice">바로가기</span>
+        </div>
+
+        <nav class="topbar__right" aria-label="상단 링크">
+          <a href="/member/login.html" class="topbar__link">로그인</a>
+          <a href="/member/join.html" class="topbar__link">회원가입</a>
+          <a href="/order/list.html" class="topbar__link">주문조회</a>
+          <a href="#" class="topbar__link">🤍출석체크🤍</a>
+          <a href="/mypage.html" class="topbar__link">마이페이지</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <div class="header-left">
+        <!-- 로고 -->
+        <div class="logo">
+          <a href="#">
+            <img
+              src="./images/logo_oon.png"
+              alt="POP MART 로고"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <!-- 버튼 아이콘 그룹 -->
+        <div class="header-buttons">
+          <img src="./images/btn_search.png" alt="search" />
+          <img src="./images/btn_basket.png" alt="basket" />
+          <img src="./images/btn_category.png" alt="category" />
+        </div>
+      </div>
+    </header>
+    <!-- nav 영역 -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">BEST</a></li>
+        <li><a href="#">COLLECTION</a></li>
+        <li><a href="#">TYPES</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">POP STORY</a></li>
+        <li><a href="#">멤버십</a></li>
+        <li><a href="#">매장안내</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+    </nav>
+
+    <!-- 메인 콘텐츠, 배너 영역 -->
+    <main>
+      <section class="banner">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <input type="radio" name="slider" id="slide5" />
+        <div class="banner-container">
+          <div class="slide active">
+            <img src="./images/배너1.jpg" alt="배너1" />
+          </div>
+          <div class="slide">
+            <img src="./images/배너2.jpg" alt="배너2" />
+          </div>
+          <div class="slide">
+            <img src="./images/배너3.jpg" alt="배너3" />
+          </div>
+          <div class="slide">
+            <img src="./images/배너4.jpg" alt="배너4" />
+          </div>
+          <div class="slide">
+            <img src="./images/배너5.jpg" alt="배너5" />
+          </div>
+        </div>
+        <!-- 이전/다음 버튼 -->
+        <div class="controls">
+          <label for="slide1" class="prev">&#10094;</label>
+          <label for="slide2" class="next">&#10095;</label>
+        </div>
+      </section>
+
+      <!-- 상품 그리드 영역 -->
+      <section class="grid-container">
+        <h4 class="grid-txt">NEW ARRIVAL</h4>
+      </section>
+      <section class="product-grid">
+        <div class="grid">
+          <!-- 상품 아이템들 -->
+          <div class="product-item">
+            <img src="./images/상품1.jpg" alt="상품1" />
+            <p>[구매권 추첨상품] 메가 스페이스 몰리 굴절 100% 42,000원</p>
+          </div>
+          <div class="product-item">
+            <img src="./images/상품2.jpg" alt="상품2" />
+            <p>디무 월드 x 왕자영요 10주년 한정 빅피규어 132,000원</p>
+          </div>
+          <div class="product-item">
+            <img src="./images/상품3.jpg" alt="상품3" />
+            <p>TINYTINY 자유의 그림자 블리스터 42,000원</p>
+          </div>
+          <div class="product-item">
+            <img src="./images/상품4.jpg" alt="상품4" />
+            <p>베이비 몰리 달콤한 과일향 시리즈 휴대폰 스트랩 16,000원</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer class="footer">
+      <p>&copy; 2025 POP MART. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
